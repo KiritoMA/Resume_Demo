@@ -1,0 +1,101 @@
+*{
+	box-sizing: border-box;
+	white-space: normal;/*代码中所有的空白被忽略，设置成nowrap不会换行*/
+	font-family: Arial, 'Simsun', sans-serif
+	
+}
+
+h1 h2 h3 h4 h5 h6{
+	margin: 0 0;
+}
+ul{
+	margin: 0;
+	padding-right: 40px;
+}
+a:link {text-decoration:none;color: blue;}    /* 未被访问的链接 */
+a:visited {text-decoration:none;color: blue;} /* 已被访问的链接 */
+/*a:hover {color: purple;}   /* 鼠标指针移动到链接上 */
+/*a:active {color: purple;}  /* 正在被点击的链接 */
+a{
+	/*display: block;*/
+	/*width: 200px;*/
+	height: 20px;
+	position: relative;
+}
+a:after{
+	content: "";
+    width: 0;
+    height: 1px;
+    background: blue;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transition: all .5s;
+}
+a:hover:after{
+	left: 0%;
+   	width: 100%;
+}
+.container{
+	background-color:rgb(217,241,239);
+	border-radius: 20px;
+	margin: 20px;
+	padding-bottom: 20px;
+}
+
+.header {
+	text-align: center;
+	height: auto;
+	padding-top: 20px;
+	border-bottom: 2px solid #fff;
+	position: relative;
+	margin: 0 auto;
+	width: 90%;
+}
+.header > .name{
+	font-size: 100px;
+	margin: auto 50px;
+	width: auto;
+	display: inline-block;
+	/*float: left;*/
+}
+
+.header > .avatar{
+	/*display: block;*/
+	/*float: left;*/
+	/*margin-top: 10px;*/
+	/*margin: 10px auto;*/
+	height: 144px;
+	width: 120px;
+	background: url(image/2.png);
+	background-size: cover;
+	/*border-radius:50%;*/
+	/*border: 1px solid #000;*/
+	background-repeat: no-repeat;
+	position: relative;
+	display: inline-block;
+	/*left: 50%*/
+}
+.description{
+	margin: 0 auto;
+	/*float: left;*/
+	display: inline-block;
+	text-align: left;
+
+}
+	.description > ul{
+		list-style: none;
+	}
+	.description > ul > .email{
+		color: blue;
+	}
+
+	.content h2 {
+		margin: 10px;
+		border-bottom: 1px dashed #666;
+		display: inline-block;
+	}
+
+
+
+
